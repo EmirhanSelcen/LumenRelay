@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumen Relay - Computer Graphics Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="game-panel" aria-label="Lumen Relay game">
+      <canvas id="game" width="900" height="600" aria-label="Lumen Relay canvas game"></canvas>
+      <div class="touch-zones" aria-hidden="true">
+        <button id="touchLeft" type="button" tabindex="-1">Left</button>
+        <button id="touchRight" type="button" tabindex="-1">Right</button>
+      </div>
+    </section>
+
+    <aside class="side-panel">
+      <h1>Lumen Relay</h1>
+      <p class="tagline">A procedural HTML5 Canvas game for the Computer Graphics final project.</p>
+
+      <dl class="stats">
+        <div>
+          <dt>Goal</dt>
+          <dd>Catch matching signal prisms and avoid static pulses.</dd>
+        </div>
+        <div>
+          <dt>Controls</dt>
+          <dd>A / D or Arrow Keys, Space to start, P to pause, M to mute.</dd>
+        </div>
+        <div>
+          <dt>Graphics</dt>
+          <dd>Transformations, animation, particles, parallax, collision, procedural rendering.</dd>
+        </div>
+      </dl>
+
+      <div class="notes">
+        <p>Match the active frequency shown at the top of the canvas. A full relay meter triggers a short beam sweep that clears dangerous pulses.</p>
+      </div>
+    </aside>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
